@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>bin2Dec</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/363e8f6035.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="main.css">
+</head>
+<body>
+  <main class="container">
+    <h1>Binary to Decimal Converter</h1>
+
+    <div class="calculator-wrapper">
+      <div class="input-wrapper">
+        <label>Binary number</label>
+        <input type="text" id="binaryNumber">
+        <div id="error-limit" class="error-message">
+          <i class="fa-solid fa-circle-exclamation"></i>
+          <span>Max of 8 digits</span>
+        </div>
+
+        <div id="error-char" class="error-message">
+          <i class="fa-solid fa-circle-exclamation"></i>
+          <span>Only 0s and 1s</span>
+        </div>
+      </div>
+      <button id="submit">Convert!</button>
+      <div class="output-wrapper">
+        <label>Decimal number</label>
+        <div id="output"></div>
+      </div>
+    </div>
+  </main>
+  
+  <script src="script.js"></script>
+</body>
+</html>
